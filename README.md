@@ -4,6 +4,8 @@ This project implements a **Convolutional Neural Network (CNN)** to automaticall
 
 The system is built using **TensorFlow/Keras** and provides an **interactive web application powered by Streamlit**, making it accessible and easy to use.
 
+Live Test : https://convolutional-neural-network-potato-leaf-disease.streamlit.app/
+
 ---
 
 ## 🎯 Project Objectives
