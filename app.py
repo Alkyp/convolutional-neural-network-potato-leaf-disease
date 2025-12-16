@@ -153,22 +153,22 @@ if uploaded_file:
         # =============================
         # SAVE HISTORY
         # =============================
-        # history_file = "history.csv"
-        # data = {
-        #     "time": datetime.now(),
-        #     "label": label,
-        #     "confidence": confidence
-        # }
+        history_file = "history.csv"
+        data = {
+            "time": datetime.now(),
+            "label": label,
+            "confidence": confidence
+        }
 
-        # df_new = pd.DataFrame([data])
+        df_new = pd.DataFrame([data])
 
-        # if os.path.exists(history_file):
-        #     df_old = pd.read_csv(history_file)
-        #     df = pd.concat([df_old, df_new], ignore_index=True)
-        # else:
-        #     df = df_new
+        if os.path.exists(history_file):
+            df_old = pd.read_csv(history_file)
+            df = pd.concat([df_old, df_new], ignore_index=True)
+        else:
+            df = df_new
 
-        # df.to_csv(history_file, index=False)
+        df.to_csv(history_file, index=False)
 
         # =============================
         # EXPLANATION
