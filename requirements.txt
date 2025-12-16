@@ -1,0 +1,10 @@
+streamlit
+tensorflow
+numpy
+pillow
+streamlit-lottie
+requests
+matplotlib
+pandas
+opencv-python
+scikit-learn
